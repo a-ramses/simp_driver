@@ -1,0 +1,14 @@
+#!/bin/sh
+module_name="simp_dev"
+device_prefix="simp-"
+
+# invoke rmmod with all arguments we got
+rmmod ${module_name}
+
+# Remove stale nodes
+rm /dev/${device_prefix}[0-1]
+
+
+
+
+
